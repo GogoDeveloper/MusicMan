@@ -8,6 +8,12 @@
             Padding="30,0"
             Spacing="50">
 
+            <Image
+                Source="musicman_logo_64x64.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+            
             <Label
                 Text="Welcome to MusicMan"
                 Style="{StaticResource Headline}"
@@ -18,13 +24,13 @@
                 Style="{StaticResource SearchbarLabel}"
                 SemanticProperties.HeadingLevel="Level6"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
-            <Entry ></Entry>
+            <Entry x:Name="YouTubeLinkSearchBar" Style="{StaticResource YouTubeLinkSearchBar}" Completed="SearchBtn_Clicked"></Entry>
 
             <Button
                 x:Name="SearchBtn"
                 Text="Search" 
                 SemanticProperties.Hint="Search for a YouTube Video"
-                Clicked="OnCounterClicked"
+                Clicked="SearchBtn_Clicked"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
