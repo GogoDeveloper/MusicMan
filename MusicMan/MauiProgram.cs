@@ -6,6 +6,7 @@ namespace MusicMan
     {
         public static MauiApp CreateMauiApp()
         {
+            //Test
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
